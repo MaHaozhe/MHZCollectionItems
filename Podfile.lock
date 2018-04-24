@@ -1,16 +1,20 @@
 PODS:
+  - AvoidCrash (2.5.2)
   - Bugly (2.5.0)
 
 DEPENDENCIES:
+  - AvoidCrash (~> 2.5.2)
   - Bugly
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AvoidCrash
     - Bugly
 
 SPEC CHECKSUMS:
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
 
-PODFILE CHECKSUM: 2a0f848a9236e648f1feed99b43da19656da794a
+PODFILE CHECKSUM: 43c85fd5ff61f9fd0780614a00c8a07c87688544
 
 COCOAPODS: 1.5.0

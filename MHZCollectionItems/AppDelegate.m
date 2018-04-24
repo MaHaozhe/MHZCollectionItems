@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Bugly.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self buglyApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
+    ViewController *rootVC = [[ViewController alloc] init];
+    self.window.rootViewController = rootVC;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
