@@ -1,0 +1,16 @@
+PODS:
+  - Bugly (2.5.0)
+
+DEPENDENCIES:
+  - Bugly
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Bugly
+
+SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+
+PODFILE CHECKSUM: 2a0f848a9236e648f1feed99b43da19656da794a
+
+COCOAPODS: 1.5.0
