@@ -14,6 +14,7 @@
 		234D2B12208EFEB500AF8279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D2B10208EFEB500AF8279 /* LaunchScreen.storyboard */; };
 		234D2B15208EFEB500AF8279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B14208EFEB500AF8279 /* main.m */; };
 		234D2B1F208F07A900AF8279 /* AppDelegate+Bugly.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B1E208F07A900AF8279 /* AppDelegate+Bugly.m */; };
+		234D2B23208F350D00AF8279 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B21208F350C00AF8279 /* AppDelegate+JPush.m */; };
 		528BA6FD1695D9A365C5BF0A /* Pods_MHZCollectionItems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065533BBCBD4AC6FB26599D0 /* Pods_MHZCollectionItems.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		234D2B14208EFEB500AF8279 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		234D2B1D208F07A900AF8279 /* AppDelegate+Bugly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Bugly.h"; sourceTree = "<group>"; };
 		234D2B1E208F07A900AF8279 /* AppDelegate+Bugly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Bugly.m"; sourceTree = "<group>"; };
+		234D2B21208F350C00AF8279 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
+		234D2B22208F350C00AF8279 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
 		BAB1244E75E263488729A4FE /* Pods-MHZCollectionItems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZCollectionItems.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHZCollectionItems/Pods-MHZCollectionItems.release.xcconfig"; sourceTree = "<group>"; };
 		D1C70CD59D625F93669C8121 /* Pods-MHZCollectionItems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZCollectionItems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHZCollectionItems/Pods-MHZCollectionItems.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +92,8 @@
 		234D2B1C208F076100AF8279 /* Category+Appdelegate */ = {
 			isa = PBXGroup;
 			children = (
+				234D2B22208F350C00AF8279 /* AppDelegate+JPush.h */,
+				234D2B21208F350C00AF8279 /* AppDelegate+JPush.m */,
 				234D2B1D208F07A900AF8279 /* AppDelegate+Bugly.h */,
 				234D2B1E208F07A900AF8279 /* AppDelegate+Bugly.m */,
 			);
@@ -239,6 +244,7 @@
 				234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */,
 				234D2B15208EFEB500AF8279 /* main.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
+				234D2B23208F350D00AF8279 /* AppDelegate+JPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +390,10 @@
 				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = "MHZCollectionItems/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hachizhineng.MHZCollectionItems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,7 +409,10 @@
 				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = "MHZCollectionItems/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hachizhineng.MHZCollectionItems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

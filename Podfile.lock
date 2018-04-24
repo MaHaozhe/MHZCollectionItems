@@ -1,20 +1,28 @@
 PODS:
   - AvoidCrash (2.5.2)
   - Bugly (2.5.0)
+  - JCore (1.1.9)
+  - JPush (3.0.2):
+    - JCore (~> 1.1.1)
 
 DEPENDENCIES:
   - AvoidCrash (~> 2.5.2)
   - Bugly
+  - JPush (= 3.0.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AvoidCrash
     - Bugly
+    - JCore
+    - JPush
 
 SPEC CHECKSUMS:
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  JCore: 27598485098d0db99d2812cba048003457d08cfb
+  JPush: 01a693fafe51b93eafc2e368bbc7a7cc07e12ce4
 
-PODFILE CHECKSUM: 43c85fd5ff61f9fd0780614a00c8a07c87688544
+PODFILE CHECKSUM: ac1a4aaa079b2d1bcd9b684e8e8f965cdfa0b48d
 
 COCOAPODS: 1.5.0
