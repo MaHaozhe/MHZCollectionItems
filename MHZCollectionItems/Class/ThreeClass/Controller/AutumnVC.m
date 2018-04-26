@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"玄";
+    self.title = @"秋";
 }
 
 - (void)didReceiveMemoryWarning {

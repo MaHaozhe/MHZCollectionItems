@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"地";
+    self.title = @"夏";
 }
 
 - (void)didReceiveMemoryWarning {

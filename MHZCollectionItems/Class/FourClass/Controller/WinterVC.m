@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"黄";
+    self.title = @"冬";
     
 }
 
