@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2329529A209034A000EBD41F /* AppDelegate+UMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 23295299209034A000EBD41F /* AppDelegate+UMAnalytics.m */; };
+		232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD45C209182FA005E6E09 /* AppDelegate+ThirdPort.m */; };
 		234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B06208EFEB300AF8279 /* AppDelegate.m */; };
 		234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B09208EFEB300AF8279 /* ViewController.m */; };
 		234D2B0D208EFEB300AF8279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D2B0B208EFEB300AF8279 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		2329529420902C1400EBD41F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		23295298209034A000EBD41F /* AppDelegate+UMAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UMAnalytics.h"; sourceTree = "<group>"; };
 		23295299209034A000EBD41F /* AppDelegate+UMAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UMAnalytics.m"; sourceTree = "<group>"; };
+		232BD45B209182FA005E6E09 /* AppDelegate+ThirdPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThirdPort.h"; sourceTree = "<group>"; };
+		232BD45C209182FA005E6E09 /* AppDelegate+ThirdPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdPort.m"; sourceTree = "<group>"; };
 		234D2B02208EFEB300AF8279 /* MHZCollectionItems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHZCollectionItems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D2B05208EFEB300AF8279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		234D2B06208EFEB300AF8279 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				234D2B1E208F07A900AF8279 /* AppDelegate+Bugly.m */,
 				23295298209034A000EBD41F /* AppDelegate+UMAnalytics.h */,
 				23295299209034A000EBD41F /* AppDelegate+UMAnalytics.m */,
+				232BD45B209182FA005E6E09 /* AppDelegate+ThirdPort.h */,
+				232BD45C209182FA005E6E09 /* AppDelegate+ThirdPort.m */,
 			);
 			path = "Category+Appdelegate";
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				234D2B1F208F07A900AF8279 /* AppDelegate+Bugly.m in Sources */,
 				2329529A209034A000EBD41F /* AppDelegate+UMAnalytics.m in Sources */,
 				234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */,
+				232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */,
 				234D2B15208EFEB500AF8279 /* main.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
 				234D2B23208F350D00AF8279 /* AppDelegate+JPush.m in Sources */,

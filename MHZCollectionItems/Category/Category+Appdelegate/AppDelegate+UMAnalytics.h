@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+static NSString *UMAnaAppID = @"f1fcc36a7a00fe6085c1697e";
+
 @interface AppDelegate (UMAnalytics)
 
 -(void)UMAnalyticsApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;

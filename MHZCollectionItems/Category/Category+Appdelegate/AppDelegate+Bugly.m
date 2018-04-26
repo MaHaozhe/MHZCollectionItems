@@ -15,7 +15,7 @@
 
 -(void)buglyApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Bugly startWithAppId:@"8a987576f6"];
+    [Bugly startWithAppId:buglyAppID];
     
     //开启防止崩溃功能
     [AvoidCrash makeAllEffective];

@@ -17,7 +17,7 @@
     [UMConfigure setEncryptEnabled:YES];//打开加密传输
     [UMConfigure setLogEnabled:YES];//设置打开日志
     [MobClick setCrashReportEnabled:NO];   // 关闭Crash收集
-    [UMConfigure initWithAppkey:@"5adff845f29d980ce70000b8" channel:@"App Store"];
+    [UMConfigure initWithAppkey:UMAnaAppID channel:@"App Store"];
     [MobClick event:@""];
 }
 

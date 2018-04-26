@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+Bugly.h"
-#import "AppDelegate+JPush.h"
+#import "AppDelegate+ThirdPort.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()
@@ -20,10 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //bugly
-    [self buglyApplication:application didFinishLaunchingWithOptions:launchOptions];
-    //jPush
-    [self jPushApplication:application didFinishLaunchingWithOptions:launchOptions];
+    //SDK初始化
+    [self ThirdPortApplication:application didFinishLaunchingWithOptions:launchOptions];
     
     ViewController *rootVC = [[ViewController alloc] init];
     self.window.rootViewController = rootVC;

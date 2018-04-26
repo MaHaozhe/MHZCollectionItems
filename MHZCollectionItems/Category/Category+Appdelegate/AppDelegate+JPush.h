@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "JPUSHService.h"
 
-static NSString *appKey = @"f1fcc36a7a00fe6085c1697e";
+static NSString *JPushAppKey = @"f1fcc36a7a00fe6085c1697e";
 static NSString *channel = @"App Store";
 
 #ifdef DEBUG

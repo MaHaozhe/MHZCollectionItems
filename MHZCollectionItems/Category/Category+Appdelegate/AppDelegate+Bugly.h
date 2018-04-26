@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+static NSString *buglyAppID = @"f1fcc36a7a00fe6085c1697e";
 @interface AppDelegate (Bugly)
 
 

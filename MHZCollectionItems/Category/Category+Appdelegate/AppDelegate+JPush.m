@@ -90,7 +90,7 @@
 //初始化SDK
 -(void)initSDKWithOpeions:(NSDictionary *)launchOptions{
     //如不需要使用IDFA，advertisingIdentifier 可为nil
-    [JPUSHService setupWithOption:launchOptions appKey:appKey
+    [JPUSHService setupWithOption:launchOptions appKey:JPushAppKey
                           channel:channel
                  apsForProduction:isProduction
             advertisingIdentifier:nil];
