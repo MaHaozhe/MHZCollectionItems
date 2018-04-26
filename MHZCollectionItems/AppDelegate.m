@@ -9,8 +9,11 @@
 #import "AppDelegate.h"
 #import "AppDelegate+ThirdPort.h"
 #import "ViewController.h"
+#import "RootTabbarVC.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong)RootTabbarVC *mainTabBar;
 
 @end
 
@@ -22,12 +25,32 @@
     //SDK初始化
     [self ThirdPortApplication:application didFinishLaunchingWithOptions:launchOptions];
     
-    ViewController *rootVC = [[ViewController alloc] init];
-    self.window.rootViewController = rootVC;
+    [self initRootTabbar:YES];
+    
+    return YES;
+}
+
+
+
+/**
+ 初始化window
+ */
+-(void)initWindow{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    return YES;
+    if (@available(iOS 11.0, *))
+    {
+        [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }
+}
+
+
+-(void)initRootTabbar:(BOOL)animation{
+    self.mainTabBar = [RootTabbarVC new];
+    self.window.rootViewController = self.mainTabBar;
+    [self.window makeKeyAndVisible];
 }
 
 

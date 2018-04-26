@@ -9,6 +9,7 @@
 #ifndef Header_h
 #define Header_h
 #import <UMAnalytics/MobClick.h>
-
-
+#import <Masonry/Masonry.h>
+#import "Helper.h"
+#import "Defines.h"
 #endif /* Header_h */

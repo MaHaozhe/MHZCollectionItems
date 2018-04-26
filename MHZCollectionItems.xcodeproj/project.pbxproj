@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		2329529A209034A000EBD41F /* AppDelegate+UMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 23295299209034A000EBD41F /* AppDelegate+UMAnalytics.m */; };
 		232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD45C209182FA005E6E09 /* AppDelegate+ThirdPort.m */; };
+		232BD4722091A87A005E6E09 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4712091A87A005E6E09 /* BaseViewController.m */; };
+		232BD4782091A8E1005E6E09 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4772091A8E1005E6E09 /* BaseView.m */; };
+		232BD47B2091A8F0005E6E09 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD47A2091A8F0005E6E09 /* BaseModel.m */; };
+		232BD47E2091A9C3005E6E09 /* SpringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD47D2091A9C3005E6E09 /* SpringVC.m */; };
+		232BD4812091A9D4005E6E09 /* SummerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4802091A9D4005E6E09 /* SummerVC.m */; };
+		232BD4842091A9EE005E6E09 /* AutumnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4832091A9EE005E6E09 /* AutumnVC.m */; };
+		232BD4872091AA02005E6E09 /* WinterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4862091AA02005E6E09 /* WinterVC.m */; };
+		232BD48B2091AA6E005E6E09 /* BaseTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD48A2091AA6E005E6E09 /* BaseTabbarVC.m */; };
+		232BD48E2091AA8C005E6E09 /* RootTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD48D2091AA8C005E6E09 /* RootTabbarVC.m */; };
+		232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4902091ABFB005E6E09 /* BaseNavigationController.m */; };
+		232BD4942091AE03005E6E09 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4922091AE03005E6E09 /* Helper.m */; };
 		234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B06208EFEB300AF8279 /* AppDelegate.m */; };
 		234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B09208EFEB300AF8279 /* ViewController.m */; };
 		234D2B0D208EFEB300AF8279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D2B0B208EFEB300AF8279 /* Main.storyboard */; };
@@ -27,6 +38,30 @@
 		23295299209034A000EBD41F /* AppDelegate+UMAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UMAnalytics.m"; sourceTree = "<group>"; };
 		232BD45B209182FA005E6E09 /* AppDelegate+ThirdPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ThirdPort.h"; sourceTree = "<group>"; };
 		232BD45C209182FA005E6E09 /* AppDelegate+ThirdPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ThirdPort.m"; sourceTree = "<group>"; };
+		232BD4702091A87A005E6E09 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		232BD4712091A87A005E6E09 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		232BD4762091A8E1005E6E09 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		232BD4772091A8E1005E6E09 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		232BD4792091A8F0005E6E09 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		232BD47A2091A8F0005E6E09 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		232BD47C2091A9C3005E6E09 /* SpringVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringVC.h; sourceTree = "<group>"; };
+		232BD47D2091A9C3005E6E09 /* SpringVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringVC.m; sourceTree = "<group>"; };
+		232BD47F2091A9D4005E6E09 /* SummerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SummerVC.h; sourceTree = "<group>"; };
+		232BD4802091A9D4005E6E09 /* SummerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummerVC.m; sourceTree = "<group>"; };
+		232BD4822091A9EE005E6E09 /* AutumnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutumnVC.h; sourceTree = "<group>"; };
+		232BD4832091A9EE005E6E09 /* AutumnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutumnVC.m; sourceTree = "<group>"; };
+		232BD4852091AA02005E6E09 /* WinterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinterVC.h; sourceTree = "<group>"; };
+		232BD4862091AA02005E6E09 /* WinterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinterVC.m; sourceTree = "<group>"; };
+		232BD4892091AA6E005E6E09 /* BaseTabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabbarVC.h; sourceTree = "<group>"; };
+		232BD48A2091AA6E005E6E09 /* BaseTabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarVC.m; sourceTree = "<group>"; };
+		232BD48C2091AA8C005E6E09 /* RootTabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTabbarVC.h; sourceTree = "<group>"; };
+		232BD48D2091AA8C005E6E09 /* RootTabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTabbarVC.m; sourceTree = "<group>"; };
+		232BD48F2091ABFB005E6E09 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		232BD4902091ABFB005E6E09 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		232BD4922091AE03005E6E09 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		232BD4932091AE03005E6E09 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		232BD4952091B15E005E6E09 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		232BD4972091B3D0005E6E09 /* BaseSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSetting.h; sourceTree = "<group>"; };
 		234D2B02208EFEB300AF8279 /* MHZCollectionItems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHZCollectionItems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D2B05208EFEB300AF8279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		234D2B06208EFEB300AF8279 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,8 +95,213 @@
 		2329529320902BEB00EBD41F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				232BD4952091B15E005E6E09 /* Defines.h */,
+				232BD4932091AE03005E6E09 /* Helper.h */,
+				232BD4922091AE03005E6E09 /* Helper.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		232BD45E2091A7D2005E6E09 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4602091A7D2005E6E09 /* OneClass */,
+				232BD4622091A7D2005E6E09 /* TwoClass */,
+				232BD4612091A7D2005E6E09 /* ThreeClass */,
+				232BD45F2091A7D2005E6E09 /* FourClass */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		232BD45F2091A7D2005E6E09 /* FourClass */ = {
+			isa = PBXGroup;
+			children = (
+				232BD46C2091A83A005E6E09 /* Controller */,
+				232BD46E2091A83A005E6E09 /* Model */,
+				232BD46D2091A83A005E6E09 /* View */,
+			);
+			path = FourClass;
+			sourceTree = "<group>";
+		};
+		232BD4602091A7D2005E6E09 /* OneClass */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4642091A826005E6E09 /* Controller */,
+				232BD4632091A826005E6E09 /* Model */,
+				232BD4652091A826005E6E09 /* View */,
+			);
+			path = OneClass;
+			sourceTree = "<group>";
+		};
+		232BD4612091A7D2005E6E09 /* ThreeClass */ = {
+			isa = PBXGroup;
+			children = (
+				232BD46B2091A833005E6E09 /* Controller */,
+				232BD46A2091A833005E6E09 /* Model */,
+				232BD4692091A833005E6E09 /* View */,
+			);
+			path = ThreeClass;
+			sourceTree = "<group>";
+		};
+		232BD4622091A7D2005E6E09 /* TwoClass */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4662091A82D005E6E09 /* Controller */,
+				232BD4672091A82D005E6E09 /* Model */,
+				232BD4682091A82D005E6E09 /* View */,
+			);
+			path = TwoClass;
+			sourceTree = "<group>";
+		};
+		232BD4632091A826005E6E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		232BD4642091A826005E6E09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				232BD47C2091A9C3005E6E09 /* SpringVC.h */,
+				232BD47D2091A9C3005E6E09 /* SpringVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		232BD4652091A826005E6E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		232BD4662091A82D005E6E09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				232BD47F2091A9D4005E6E09 /* SummerVC.h */,
+				232BD4802091A9D4005E6E09 /* SummerVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		232BD4672091A82D005E6E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		232BD4682091A82D005E6E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		232BD4692091A833005E6E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		232BD46A2091A833005E6E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		232BD46B2091A833005E6E09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4822091A9EE005E6E09 /* AutumnVC.h */,
+				232BD4832091A9EE005E6E09 /* AutumnVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		232BD46C2091A83A005E6E09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4852091AA02005E6E09 /* WinterVC.h */,
+				232BD4862091AA02005E6E09 /* WinterVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		232BD46D2091A83A005E6E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		232BD46E2091A83A005E6E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		232BD46F2091A864005E6E09 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4962091B3D0005E6E09 /* Setting */,
+				232BD4732091A8C6005E6E09 /* Controller */,
+				232BD4742091A8C6005E6E09 /* Model */,
+				232BD4752091A8C6005E6E09 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		232BD4732091A8C6005E6E09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4702091A87A005E6E09 /* BaseViewController.h */,
+				232BD4712091A87A005E6E09 /* BaseViewController.m */,
+				232BD4892091AA6E005E6E09 /* BaseTabbarVC.h */,
+				232BD48A2091AA6E005E6E09 /* BaseTabbarVC.m */,
+				232BD48F2091ABFB005E6E09 /* BaseNavigationController.h */,
+				232BD4902091ABFB005E6E09 /* BaseNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		232BD4742091A8C6005E6E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4792091A8F0005E6E09 /* BaseModel.h */,
+				232BD47A2091A8F0005E6E09 /* BaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		232BD4752091A8C6005E6E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4762091A8E1005E6E09 /* BaseView.h */,
+				232BD4772091A8E1005E6E09 /* BaseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		232BD4882091AA1A005E6E09 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				232BD48C2091AA8C005E6E09 /* RootTabbarVC.h */,
+				232BD48D2091AA8C005E6E09 /* RootTabbarVC.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		232BD4962091B3D0005E6E09 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				232BD4972091B3D0005E6E09 /* BaseSetting.h */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		234D2AF9208EFEB300AF8279 = {
@@ -85,8 +325,11 @@
 		234D2B04208EFEB300AF8279 /* MHZCollectionItems */ = {
 			isa = PBXGroup;
 			children = (
+				232BD46F2091A864005E6E09 /* Base */,
 				2329529320902BEB00EBD41F /* Utils */,
 				234D2B1B208F076100AF8279 /* Category */,
+				232BD45E2091A7D2005E6E09 /* Class */,
+				232BD4882091AA1A005E6E09 /* Main */,
 				234D2B20208F07E500AF8279 /* Supporting Files */,
 				234D2B05208EFEB300AF8279 /* AppDelegate.h */,
 				234D2B06208EFEB300AF8279 /* AppDelegate.m */,
@@ -225,10 +468,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MHZCollectionItems/Pods-MHZCollectionItems-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AvoidCrash/AvoidCrash.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AvoidCrash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -261,11 +506,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				234D2B1F208F07A900AF8279 /* AppDelegate+Bugly.m in Sources */,
+				232BD4722091A87A005E6E09 /* BaseViewController.m in Sources */,
+				232BD48E2091AA8C005E6E09 /* RootTabbarVC.m in Sources */,
+				232BD4782091A8E1005E6E09 /* BaseView.m in Sources */,
 				2329529A209034A000EBD41F /* AppDelegate+UMAnalytics.m in Sources */,
+				232BD4842091A9EE005E6E09 /* AutumnVC.m in Sources */,
+				232BD47E2091A9C3005E6E09 /* SpringVC.m in Sources */,
+				232BD4942091AE03005E6E09 /* Helper.m in Sources */,
 				234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */,
 				232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */,
+				232BD4812091A9D4005E6E09 /* SummerVC.m in Sources */,
+				232BD4872091AA02005E6E09 /* WinterVC.m in Sources */,
+				232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */,
 				234D2B15208EFEB500AF8279 /* main.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
+				232BD47B2091A8F0005E6E09 /* BaseModel.m in Sources */,
+				232BD48B2091AA6E005E6E09 /* BaseTabbarVC.m in Sources */,
 				234D2B23208F350D00AF8279 /* AppDelegate+JPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,5 +8,6 @@ pod 'JPush', '3.0.2'
 pod 'UMCCommon'
 pod 'UMCAnalytics'
 pod 'UMCSecurityPlugins'
+pod 'Masonry'
 end
 
