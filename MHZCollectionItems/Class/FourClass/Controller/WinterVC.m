@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"冬";
+    self.navigationItem.title = @"冬";
     
 }
 

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"秋";
+    self.navigationItem.title = @"秋";
 }
 
 - (void)didReceiveMemoryWarning {
