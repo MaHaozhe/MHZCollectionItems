@@ -20,6 +20,7 @@
 		232BD48E2091AA8C005E6E09 /* RootTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD48D2091AA8C005E6E09 /* RootTabbarVC.m */; };
 		232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4902091ABFB005E6E09 /* BaseNavigationController.m */; };
 		232BD4942091AE03005E6E09 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4922091AE03005E6E09 /* Helper.m */; };
+		234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 234007D02094698000E7F23D /* TransferAnimatManager.m */; };
 		234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B06208EFEB300AF8279 /* AppDelegate.m */; };
 		234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B09208EFEB300AF8279 /* ViewController.m */; };
 		234D2B0D208EFEB300AF8279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D2B0B208EFEB300AF8279 /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 		232BD4932091AE03005E6E09 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		232BD4952091B15E005E6E09 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		232BD4972091B3D0005E6E09 /* BaseSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSetting.h; sourceTree = "<group>"; };
+		234007CF2094698000E7F23D /* TransferAnimatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferAnimatManager.h; sourceTree = "<group>"; };
+		234007D02094698000E7F23D /* TransferAnimatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferAnimatManager.m; sourceTree = "<group>"; };
 		234D2B02208EFEB300AF8279 /* MHZCollectionItems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHZCollectionItems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D2B05208EFEB300AF8279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		234D2B06208EFEB300AF8279 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -304,6 +307,15 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		234007CE2094690700E7F23D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				234007CF2094698000E7F23D /* TransferAnimatManager.h */,
+				234007D02094698000E7F23D /* TransferAnimatManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		234D2AF9208EFEB300AF8279 = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +337,7 @@
 		234D2B04208EFEB300AF8279 /* MHZCollectionItems */ = {
 			isa = PBXGroup;
 			children = (
+				234007CE2094690700E7F23D /* Managers */,
 				232BD46F2091A864005E6E09 /* Base */,
 				2329529320902BEB00EBD41F /* Utils */,
 				234D2B1B208F076100AF8279 /* Category */,
@@ -519,6 +532,7 @@
 				232BD4872091AA02005E6E09 /* WinterVC.m in Sources */,
 				232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */,
 				234D2B15208EFEB500AF8279 /* main.m in Sources */,
+				234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
 				232BD47B2091A8F0005E6E09 /* BaseModel.m in Sources */,
 				232BD48B2091AA6E005E6E09 /* BaseTabbarVC.m in Sources */,

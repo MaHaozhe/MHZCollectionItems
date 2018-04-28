@@ -10,4 +10,6 @@
 
 @interface BaseNavigationController : UINavigationController
 
+@property (nonatomic, assign) NSInteger index;//所在分栏控制器的下表
+
 @end

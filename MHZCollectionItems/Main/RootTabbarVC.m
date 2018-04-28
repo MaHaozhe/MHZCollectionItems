@@ -12,6 +12,7 @@
 #import "AutumnVC.h"
 #import "WinterVC.h"
 #import "BaseNavigationController.h"
+#import "TransferAnimatManager.h"
 
 @interface RootTabbarVC ()<UITabBarControllerDelegate>
 
@@ -53,18 +54,22 @@
     
     SpringVC *spingVC = [[SpringVC alloc] init];
     BaseNavigationController *springNav = [self loadItemWithTitle:@"春" normalIcon:@"order_normal" selectedIcon:@"order_selected" controller:spingVC];
+    springNav.index = 0;
     [springNav.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -4)];
     
     SummerVC *summerVC = [[SummerVC alloc] init];
     BaseNavigationController *summerNav = [self loadItemWithTitle:@"夏" normalIcon:@"produce_normal" selectedIcon:@"produce_selected" controller:summerVC];
+    summerNav.index = 1;
     [summerNav.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -4)];
     
     AutumnVC *autumnVC = [[AutumnVC alloc] init];
     BaseNavigationController *autumnNav = [self loadItemWithTitle:@"秋" normalIcon:@"message_normal" selectedIcon:@"message_selected" controller:autumnVC];
+    autumnNav.index = 2;
     [autumnNav.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -4)];
     
     WinterVC *winterVC = [[WinterVC alloc] init];
     BaseNavigationController *winterNav = [self loadItemWithTitle:@"冬" normalIcon:@"seting_normal" selectedIcon:@"setting_selected" controller:winterVC];
+    winterNav.index = 3;
     [winterNav.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -4)];
     
     self.viewControllers = @[springNav,summerNav,autumnNav,winterNav];
@@ -107,9 +112,6 @@
                         radius:3
                          color:[UIColor blackColor]
                        opacity:0.3];
-    
-    
-    
 }
 
 
@@ -139,6 +141,11 @@
     CGFloat w = [UIScreen mainScreen].bounds.size.width;
     NSInteger a = tabBarController.selectedIndex;
     _itemBgImg.frame = CGRectMake(a* w/4, 0, w/4, 49);
+}
+
+//添加动画
+- (id<UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
+    return [[TransferAnimatManager alloc] init];
 }
 
 @end
