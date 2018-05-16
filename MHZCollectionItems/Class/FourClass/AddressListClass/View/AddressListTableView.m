@@ -8,18 +8,20 @@
 
 #import "AddressListTableView.h"
 
+typedef void(^clickCellBlock)(NSIndexPath *indexPath);
 @interface AddressListTableView()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic, copy) clickCellBlock clickBlock;
 
 @end
 
 @implementation AddressListTableView
 
--(instancetype)initWithBlock:(void (^)(void))block{
+-(instancetype)initWithDidSelectedCellComplete:(void (^)(NSIndexPath *))block{
     if (self = [super init]) {
         [self setupTableview];
         if (block) {
-            
+            _clickBlock = block;
         }
     }
     return self;
@@ -65,11 +67,8 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if ([self.addressDelegate respondsToSelector:@selector(didSeletedCellActionWithIndexPath:complete:)]) {
-        [self.addressDelegate didSeletedCellActionWithIndexPath:indexPath complete:^(NSString *str) {
-            [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        }];
-    }
+    _clickBlock(indexPath);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

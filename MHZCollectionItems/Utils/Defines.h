@@ -3,6 +3,7 @@
 #define PLACEHOLDER [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"placeholder" ofType:@"jpg"]]
 #define TAPLOAD [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"tapLoadImage" ofType:@"jpg"]]
 
+#define Navigation_Status_Hight (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
 
 //屏幕宽高
 #define SCREEM_HEIGHT [UIScreen mainScreen].bounds.size.height

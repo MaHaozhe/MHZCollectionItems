@@ -9,8 +9,11 @@
 #import "AddressListVC.h"
 #import "AddressListTableView.h"
 #import "AddressSearchBar.h"
+#import "AddressListDetailVC.h"
 
 @interface AddressListVC ()
+
+
 
 @end
 
@@ -30,23 +33,25 @@
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:addBtn];
     self.navigationItem.rightBarButtonItem = item;
     
-    AddressSearchBar *searchBar = [[AddressSearchBar alloc] init];
-    [self.view addSubview:searchBar];
+    _searchBar = [[AddressSearchBar alloc] init];
+    [self.view addSubview:_searchBar];
     
-    AddressListTableView *tableview = [[AddressListTableView alloc] initWithBlock:^{
-        
+    __weak __typeof(self) weakSelf = self;
+    AddressListTableView *tableview = [[AddressListTableView alloc] initWithDidSelectedCellComplete:^(NSIndexPath *indexPath) {
+        AddressListDetailVC *detailVC = [[AddressListDetailVC alloc] init];
+        [weakSelf.navigationController pushViewController:detailVC animated:YES];
     }];
     [self.view addSubview:tableview];
     
-    [searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.view);
-        make.top.equalTo(@(64 - 20));
+        make.top.equalTo(@(Navigation_Status_Hight - 20));
         make.height.equalTo(@(76));
     }];
     
     [tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
-        make.top.equalTo(searchBar.mas_bottom);
+        make.top.equalTo(self.searchBar.mas_bottom);
     }];
 }
 

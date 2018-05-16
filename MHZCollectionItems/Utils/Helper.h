@@ -70,6 +70,13 @@ typedef NS_ENUM(NSInteger, UIViewControllerPresentOrientation) {
  *  @return 英文缩写
  */
 + (NSString *)monthToEnglish:(int)index;
+
+/**
+ *  获取当前window的控制器
+ *  @return 当前控制器
+ */
++ (UIViewController*)currentViewController;
+
 @end
 
 @interface UITableView(Additions)

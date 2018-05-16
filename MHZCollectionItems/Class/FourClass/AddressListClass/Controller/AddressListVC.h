@@ -8,6 +8,9 @@
 
 #import "BaseViewController.h"
 
+@class AddressSearchBar;
 @interface AddressListVC : BaseViewController
+
+@property (nonatomic, strong) AddressSearchBar *searchBar;
 
 @end
