@@ -8,14 +8,25 @@
 
 #import "AddressSearchBar.h"
 
+@interface AddressSearchBar()<UISearchBarDelegate>
+
+@end
+
+
 @implementation AddressSearchBar
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(instancetype)init{
+    if (self = [super init]) {
+        [self setupSearchBar];
+    }
+    return self;
 }
-*/
+
+-(void)setupSearchBar{
+    self.placeholder = @"搜索";
+    self.prompt = @" ";
+    self.delegate =self;
+    self.searchFieldBackgroundPositionAdjustment = UIOffsetMake(0, 20);
+}
 
 @end

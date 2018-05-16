@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2328D6D920AABAC4007F7CC9 /* AddressListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328D6D820AABAC4007F7CC9 /* AddressListVC.m */; };
+		2328D6DC20AABCB0007F7CC9 /* AddressListDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328D6DB20AABCB0007F7CC9 /* AddressListDetailVC.m */; };
+		2328D6DF20AABD4B007F7CC9 /* AddressListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328D6DE20AABD4B007F7CC9 /* AddressListTableView.m */; };
+		2328D6E220AABDA2007F7CC9 /* AddressListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328D6E120AABDA2007F7CC9 /* AddressListCell.m */; };
+		2328D6E520AABF22007F7CC9 /* AddressSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2328D6E420AABF22007F7CC9 /* AddressSearchBar.m */; };
 		2329529A209034A000EBD41F /* AppDelegate+UMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 23295299209034A000EBD41F /* AppDelegate+UMAnalytics.m */; };
 		232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD45C209182FA005E6E09 /* AppDelegate+ThirdPort.m */; };
 		232BD4722091A87A005E6E09 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4712091A87A005E6E09 /* BaseViewController.m */; };
@@ -50,6 +55,16 @@
 
 /* Begin PBXFileReference section */
 		065533BBCBD4AC6FB26599D0 /* Pods_MHZCollectionItems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHZCollectionItems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2328D6D720AABAC4007F7CC9 /* AddressListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressListVC.h; sourceTree = "<group>"; };
+		2328D6D820AABAC4007F7CC9 /* AddressListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressListVC.m; sourceTree = "<group>"; };
+		2328D6DA20AABCB0007F7CC9 /* AddressListDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressListDetailVC.h; sourceTree = "<group>"; };
+		2328D6DB20AABCB0007F7CC9 /* AddressListDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressListDetailVC.m; sourceTree = "<group>"; };
+		2328D6DD20AABD4B007F7CC9 /* AddressListTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressListTableView.h; sourceTree = "<group>"; };
+		2328D6DE20AABD4B007F7CC9 /* AddressListTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressListTableView.m; sourceTree = "<group>"; };
+		2328D6E020AABDA2007F7CC9 /* AddressListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressListCell.h; sourceTree = "<group>"; };
+		2328D6E120AABDA2007F7CC9 /* AddressListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressListCell.m; sourceTree = "<group>"; };
+		2328D6E320AABF22007F7CC9 /* AddressSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressSearchBar.h; sourceTree = "<group>"; };
+		2328D6E420AABF22007F7CC9 /* AddressSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressSearchBar.m; sourceTree = "<group>"; };
 		2329529420902C1400EBD41F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		23295298209034A000EBD41F /* AppDelegate+UMAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UMAnalytics.h"; sourceTree = "<group>"; };
 		23295299209034A000EBD41F /* AppDelegate+UMAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UMAnalytics.m"; sourceTree = "<group>"; };
@@ -142,6 +157,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2328D6D320AABA7C007F7CC9 /* AddressListClass */ = {
+			isa = PBXGroup;
+			children = (
+				2328D6D620AABAAF007F7CC9 /* Controller */,
+				2328D6D520AABAAF007F7CC9 /* Model */,
+				2328D6D420AABAAF007F7CC9 /* View */,
+			);
+			path = AddressListClass;
+			sourceTree = "<group>";
+		};
+		2328D6D420AABAAF007F7CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2328D6DD20AABD4B007F7CC9 /* AddressListTableView.h */,
+				2328D6DE20AABD4B007F7CC9 /* AddressListTableView.m */,
+				2328D6E020AABDA2007F7CC9 /* AddressListCell.h */,
+				2328D6E120AABDA2007F7CC9 /* AddressListCell.m */,
+				2328D6E320AABF22007F7CC9 /* AddressSearchBar.h */,
+				2328D6E420AABF22007F7CC9 /* AddressSearchBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2328D6D520AABAAF007F7CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2328D6D620AABAAF007F7CC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2328D6D720AABAC4007F7CC9 /* AddressListVC.h */,
+				2328D6D820AABAC4007F7CC9 /* AddressListVC.m */,
+				2328D6DA20AABCB0007F7CC9 /* AddressListDetailVC.h */,
+				2328D6DB20AABCB0007F7CC9 /* AddressListDetailVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2329529320902BEB00EBD41F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +223,7 @@
 		232BD45F2091A7D2005E6E09 /* FourClass */ = {
 			isa = PBXGroup;
 			children = (
+				2328D6D320AABA7C007F7CC9 /* AddressListClass */,
 				232BD46C2091A83A005E6E09 /* Controller */,
 				232BD46E2091A83A005E6E09 /* Model */,
 				232BD46D2091A83A005E6E09 /* View */,
@@ -641,18 +698,23 @@
 				232BD48E2091AA8C005E6E09 /* RootTabbarVC.m in Sources */,
 				232BD4782091A8E1005E6E09 /* BaseView.m in Sources */,
 				2329529A209034A000EBD41F /* AppDelegate+UMAnalytics.m in Sources */,
+				2328D6DC20AABCB0007F7CC9 /* AddressListDetailVC.m in Sources */,
 				232BD4842091A9EE005E6E09 /* AutumnVC.m in Sources */,
 				232BD47E2091A9C3005E6E09 /* SpringVC.m in Sources */,
 				232BD4942091AE03005E6E09 /* Helper.m in Sources */,
 				234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */,
 				238B3C2C20A5487000F396D7 /* PaymentVC.m in Sources */,
+				2328D6D920AABAC4007F7CC9 /* AddressListVC.m in Sources */,
 				232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */,
+				2328D6E220AABDA2007F7CC9 /* AddressListCell.m in Sources */,
 				232BD4812091A9D4005E6E09 /* SummerVC.m in Sources */,
 				232BD4872091AA02005E6E09 /* WinterVC.m in Sources */,
 				232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */,
 				234D2B15208EFEB500AF8279 /* main.m in Sources */,
 				234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */,
 				23F417B320A930EE00A75E26 /* APOrderInfo.m in Sources */,
+				2328D6DF20AABD4B007F7CC9 /* AddressListTableView.m in Sources */,
+				2328D6E520AABF22007F7CC9 /* AddressSearchBar.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
 				232BD47B2091A8F0005E6E09 /* BaseModel.m in Sources */,
 				232BD48B2091AA6E005E6E09 /* BaseTabbarVC.m in Sources */,
@@ -814,7 +876,10 @@
 				);
 				INFOPLIST_FILE = "MHZCollectionItems/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -846,7 +911,10 @@
 				);
 				INFOPLIST_FILE = "MHZCollectionItems/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",

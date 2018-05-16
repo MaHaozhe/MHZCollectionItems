@@ -7,6 +7,8 @@
 //
 
 #import "AddressListVC.h"
+#import "AddressListTableView.h"
+#import "AddressSearchBar.h"
 
 @interface AddressListVC ()
 
@@ -16,22 +18,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"通讯录";
+    
+    [self setupViews];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setupViews{
+    //添加导航加号按钮
+    UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [addBtn addTarget:self action:@selector(navigationRightBtnAddAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:addBtn];
+    self.navigationItem.rightBarButtonItem = item;
+    
+    AddressSearchBar *searchBar = [[AddressSearchBar alloc] init];
+    [self.view addSubview:searchBar];
+    
+    AddressListTableView *tableview = [[AddressListTableView alloc] initWithBlock:^{
+        
+    }];
+    [self.view addSubview:tableview];
+    
+    [searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.top.equalTo(@(64 - 20));
+        make.height.equalTo(@(76));
+    }];
+    
+    [tableview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(searchBar.mas_bottom);
+    }];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 交互事件
+-(void)navigationRightBtnAddAction{
+    NSLog(@"添加联系人");
 }
-*/
+
 
 @end

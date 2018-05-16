@@ -8,7 +8,7 @@
 
 #import "BaseNavigationController.h"
 
-@interface BaseNavigationController ()
+@interface BaseNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -19,19 +19,15 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 为子控制器添加自定义返回按钮
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    //非根控制器
+    if (self.viewControllers.count >= 1) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    //必须放下边，不然会消失（不知道为什么）
+    [super pushViewController:viewController animated:animated];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

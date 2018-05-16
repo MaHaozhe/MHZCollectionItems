@@ -8,6 +8,7 @@
 
 #import "WinterVC.h"
 #import "PaymentVC.h"
+#import "AddressListVC.h"//通讯录
 
 @interface WinterVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -82,6 +83,9 @@
     if (indexPath.row == 0) {
         PaymentVC *payVC = [[PaymentVC alloc] init];
         [self.navigationController pushViewController:payVC animated:YES];
+    }else if (indexPath.row == 1){
+        AddressListVC *addressVC = [[AddressListVC alloc] init];
+        [self.navigationController pushViewController:addressVC animated:YES];
     }
 }
 
