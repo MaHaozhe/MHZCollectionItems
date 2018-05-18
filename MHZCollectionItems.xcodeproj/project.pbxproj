@@ -25,6 +25,8 @@
 		232BD48E2091AA8C005E6E09 /* RootTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD48D2091AA8C005E6E09 /* RootTabbarVC.m */; };
 		232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4902091ABFB005E6E09 /* BaseNavigationController.m */; };
 		232BD4942091AE03005E6E09 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 232BD4922091AE03005E6E09 /* Helper.m */; };
+		2330CE7220AEA6C500FC2FB8 /* MFMDBObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330CE7120AEA6C500FC2FB8 /* MFMDBObj.m */; };
+		2330CE7520AEBD4600FC2FB8 /* AddressListDetailTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330CE7420AEBD4600FC2FB8 /* AddressListDetailTopView.m */; };
 		234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 234007D02094698000E7F23D /* TransferAnimatManager.m */; };
 		234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B06208EFEB300AF8279 /* AppDelegate.m */; };
 		234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B09208EFEB300AF8279 /* ViewController.m */; };
@@ -94,6 +96,10 @@
 		232BD4932091AE03005E6E09 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		232BD4952091B15E005E6E09 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		232BD4972091B3D0005E6E09 /* BaseSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSetting.h; sourceTree = "<group>"; };
+		2330CE7020AEA6C500FC2FB8 /* MFMDBObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFMDBObj.h; sourceTree = "<group>"; };
+		2330CE7120AEA6C500FC2FB8 /* MFMDBObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFMDBObj.m; sourceTree = "<group>"; };
+		2330CE7320AEBD4600FC2FB8 /* AddressListDetailTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressListDetailTopView.h; sourceTree = "<group>"; };
+		2330CE7420AEBD4600FC2FB8 /* AddressListDetailTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressListDetailTopView.m; sourceTree = "<group>"; };
 		234007CF2094698000E7F23D /* TransferAnimatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferAnimatManager.h; sourceTree = "<group>"; };
 		234007D02094698000E7F23D /* TransferAnimatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferAnimatManager.m; sourceTree = "<group>"; };
 		234D2B02208EFEB300AF8279 /* MHZCollectionItems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHZCollectionItems.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +182,8 @@
 				2328D6E120AABDA2007F7CC9 /* AddressListCell.m */,
 				2328D6E320AABF22007F7CC9 /* AddressSearchBar.h */,
 				2328D6E420AABF22007F7CC9 /* AddressSearchBar.m */,
+				2330CE7320AEBD4600FC2FB8 /* AddressListDetailTopView.h */,
+				2330CE7420AEBD4600FC2FB8 /* AddressListDetailTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +191,8 @@
 		2328D6D520AABAAF007F7CC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2330CE7020AEA6C500FC2FB8 /* MFMDBObj.h */,
+				2330CE7120AEA6C500FC2FB8 /* MFMDBObj.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -693,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				234D2B1F208F07A900AF8279 /* AppDelegate+Bugly.m in Sources */,
+				2330CE7520AEBD4600FC2FB8 /* AddressListDetailTopView.m in Sources */,
 				232BD4722091A87A005E6E09 /* BaseViewController.m in Sources */,
 				238B3C4B20A54AEA00F396D7 /* ZFBPaymentVC.m in Sources */,
 				232BD48E2091AA8C005E6E09 /* RootTabbarVC.m in Sources */,
@@ -714,6 +725,7 @@
 				234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */,
 				23F417B320A930EE00A75E26 /* APOrderInfo.m in Sources */,
 				2328D6DF20AABD4B007F7CC9 /* AddressListTableView.m in Sources */,
+				2330CE7220AEA6C500FC2FB8 /* MFMDBObj.m in Sources */,
 				2328D6E520AABF22007F7CC9 /* AddressSearchBar.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
 				232BD47B2091A8F0005E6E09 /* BaseModel.m in Sources */,

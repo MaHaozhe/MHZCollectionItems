@@ -10,6 +10,7 @@
 #import "AddressListTableView.h"
 #import "AddressSearchBar.h"
 #import "AddressListDetailVC.h"
+#import "MFMDBObj.h"
 
 @interface AddressListVC ()
 
