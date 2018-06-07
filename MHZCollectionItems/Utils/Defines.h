@@ -70,7 +70,7 @@
 #pragma mark - Color
 //#define DEFAULT_NAVBAR_COLOR            [UIColor colorWith0xRGB:@"f43b3b"];
 #define DEFAULT_BACKGROUND_COLOR        DNColor(239.0, 239.0, 244.0, 1.0)
-
+#define DEFAULT_LINE_COLOR              DNColor(220.0, 220.0, 220.0, 1.0)
 #define DEFAULT_SEARCHBAR_COLOR         DNColor(239.0, 239.0, 244.0, 1.0)
 #define DEFAULT_TABBAr_COLOR             DNColor(240, 43, 52, 1.0f)
 

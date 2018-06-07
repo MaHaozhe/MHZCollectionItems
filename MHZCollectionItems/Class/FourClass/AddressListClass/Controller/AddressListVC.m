@@ -11,6 +11,7 @@
 #import "AddressSearchBar.h"
 #import "AddressListDetailVC.h"
 #import "MFMDBObj.h"
+#import "AddressDetailEditVC.h"
 
 @interface AddressListVC ()
 
@@ -59,7 +60,9 @@
 
 #pragma mark - 交互事件
 -(void)navigationRightBtnAddAction{
-    NSLog(@"添加联系人");
+    AddressDetailEditVC *editVC = [[AddressDetailEditVC alloc] init];
+    BaseNavigationController *navVC = [[BaseNavigationController alloc] initWithRootViewController:editVC];
+    [self presentViewController:navVC animated:YES completion:nil];
 }
 
 

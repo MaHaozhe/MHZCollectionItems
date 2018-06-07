@@ -28,6 +28,10 @@
 		2330CE7220AEA6C500FC2FB8 /* MFMDBObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330CE7120AEA6C500FC2FB8 /* MFMDBObj.m */; };
 		2330CE7520AEBD4600FC2FB8 /* AddressListDetailTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330CE7420AEBD4600FC2FB8 /* AddressListDetailTopView.m */; };
 		234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 234007D02094698000E7F23D /* TransferAnimatManager.m */; };
+		234B776A20C8D48300FBACB9 /* AddressDetailEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B776920C8D48300FBACB9 /* AddressDetailEditVC.m */; };
+		234B776D20C91D1D00FBACB9 /* AddressDetailEditTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B776C20C91D1D00FBACB9 /* AddressDetailEditTableView.m */; };
+		234B777020C9208B00FBACB9 /* AddressEditHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B776F20C9208B00FBACB9 /* AddressEditHeadCell.m */; };
+		234B777320C927BB00FBACB9 /* AddressEditHeadSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B777220C927BB00FBACB9 /* AddressEditHeadSubCell.m */; };
 		234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B06208EFEB300AF8279 /* AppDelegate.m */; };
 		234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B09208EFEB300AF8279 /* ViewController.m */; };
 		234D2B0D208EFEB300AF8279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D2B0B208EFEB300AF8279 /* Main.storyboard */; };
@@ -102,6 +106,14 @@
 		2330CE7420AEBD4600FC2FB8 /* AddressListDetailTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressListDetailTopView.m; sourceTree = "<group>"; };
 		234007CF2094698000E7F23D /* TransferAnimatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferAnimatManager.h; sourceTree = "<group>"; };
 		234007D02094698000E7F23D /* TransferAnimatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferAnimatManager.m; sourceTree = "<group>"; };
+		234B776820C8D48300FBACB9 /* AddressDetailEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressDetailEditVC.h; sourceTree = "<group>"; };
+		234B776920C8D48300FBACB9 /* AddressDetailEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressDetailEditVC.m; sourceTree = "<group>"; };
+		234B776B20C91D1D00FBACB9 /* AddressDetailEditTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressDetailEditTableView.h; sourceTree = "<group>"; };
+		234B776C20C91D1D00FBACB9 /* AddressDetailEditTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressDetailEditTableView.m; sourceTree = "<group>"; };
+		234B776E20C9208B00FBACB9 /* AddressEditHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressEditHeadCell.h; sourceTree = "<group>"; };
+		234B776F20C9208B00FBACB9 /* AddressEditHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressEditHeadCell.m; sourceTree = "<group>"; };
+		234B777120C927BB00FBACB9 /* AddressEditHeadSubCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressEditHeadSubCell.h; sourceTree = "<group>"; };
+		234B777220C927BB00FBACB9 /* AddressEditHeadSubCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressEditHeadSubCell.m; sourceTree = "<group>"; };
 		234D2B02208EFEB300AF8279 /* MHZCollectionItems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHZCollectionItems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D2B05208EFEB300AF8279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		234D2B06208EFEB300AF8279 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -184,6 +196,12 @@
 				2328D6E420AABF22007F7CC9 /* AddressSearchBar.m */,
 				2330CE7320AEBD4600FC2FB8 /* AddressListDetailTopView.h */,
 				2330CE7420AEBD4600FC2FB8 /* AddressListDetailTopView.m */,
+				234B776B20C91D1D00FBACB9 /* AddressDetailEditTableView.h */,
+				234B776C20C91D1D00FBACB9 /* AddressDetailEditTableView.m */,
+				234B776E20C9208B00FBACB9 /* AddressEditHeadCell.h */,
+				234B776F20C9208B00FBACB9 /* AddressEditHeadCell.m */,
+				234B777120C927BB00FBACB9 /* AddressEditHeadSubCell.h */,
+				234B777220C927BB00FBACB9 /* AddressEditHeadSubCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +222,8 @@
 				2328D6D820AABAC4007F7CC9 /* AddressListVC.m */,
 				2328D6DA20AABCB0007F7CC9 /* AddressListDetailVC.h */,
 				2328D6DB20AABCB0007F7CC9 /* AddressListDetailVC.m */,
+				234B776820C8D48300FBACB9 /* AddressDetailEditVC.h */,
+				234B776920C8D48300FBACB9 /* AddressDetailEditVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -704,6 +724,7 @@
 			files = (
 				234D2B1F208F07A900AF8279 /* AppDelegate+Bugly.m in Sources */,
 				2330CE7520AEBD4600FC2FB8 /* AddressListDetailTopView.m in Sources */,
+				234B776D20C91D1D00FBACB9 /* AddressDetailEditTableView.m in Sources */,
 				232BD4722091A87A005E6E09 /* BaseViewController.m in Sources */,
 				238B3C4B20A54AEA00F396D7 /* ZFBPaymentVC.m in Sources */,
 				232BD48E2091AA8C005E6E09 /* RootTabbarVC.m in Sources */,
@@ -715,17 +736,20 @@
 				232BD4942091AE03005E6E09 /* Helper.m in Sources */,
 				234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */,
 				238B3C2C20A5487000F396D7 /* PaymentVC.m in Sources */,
+				234B777020C9208B00FBACB9 /* AddressEditHeadCell.m in Sources */,
 				2328D6D920AABAC4007F7CC9 /* AddressListVC.m in Sources */,
 				232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */,
 				2328D6E220AABDA2007F7CC9 /* AddressListCell.m in Sources */,
 				232BD4812091A9D4005E6E09 /* SummerVC.m in Sources */,
 				232BD4872091AA02005E6E09 /* WinterVC.m in Sources */,
+				234B777320C927BB00FBACB9 /* AddressEditHeadSubCell.m in Sources */,
 				232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */,
 				234D2B15208EFEB500AF8279 /* main.m in Sources */,
 				234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */,
 				23F417B320A930EE00A75E26 /* APOrderInfo.m in Sources */,
 				2328D6DF20AABD4B007F7CC9 /* AddressListTableView.m in Sources */,
 				2330CE7220AEA6C500FC2FB8 /* MFMDBObj.m in Sources */,
+				234B776A20C8D48300FBACB9 /* AddressDetailEditVC.m in Sources */,
 				2328D6E520AABF22007F7CC9 /* AddressSearchBar.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
 				232BD47B2091A8F0005E6E09 /* BaseModel.m in Sources */,
