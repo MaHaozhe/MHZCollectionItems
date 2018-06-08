@@ -80,4 +80,12 @@ typedef enum : NSUInteger {
  */
 -(void)hideNavigationBarBgColor;
 
+
+/**
+ 设置导航背景色
+
+ @param color 要设置的背景色
+ */
+-(void)setNavigationBarBgImageWithColor:(UIColor *)color;
+
 @end

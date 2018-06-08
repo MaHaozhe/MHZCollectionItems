@@ -28,15 +28,24 @@
 
 
 -(void)setupSubviews{
+    
+    self.backgroundColor = [UIColor clearColor];
+    
     _headImgView = [[UIImageView alloc] init];
+    _headImgView.backgroundColor = [UIColor colorWith0xRGB:@"e1e1e1"];
+    _headImgView.layer.cornerRadius = 25;
+    _headImgView.layer.borderWidth = 1;
+    _headImgView.layer.borderColor = [UIColor whiteColor].CGColor;
+    _headImgView.layer.masksToBounds = YES;
     [self addSubview:_headImgView];
     
     _tableView = [[UITableView alloc] init];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    _tableView.backgroundColor = [UIColor colorWith0xRGB:@"efefef" alpha:1.f];
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    _tableView.backgroundColor = ADDRESSLIST_BACKGROUND_COLOR;
+    _tableView.estimatedRowHeight = 100;
+    [_tableView registerClass:[AddressEditHeadSubCell class] forCellReuseIdentifier:@"AddressEditHeadSubCell"];
     [self addSubview:_tableView];
     
     
@@ -44,7 +53,7 @@
     [_headImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(10);
         make.top.equalTo(self.mas_top).offset(5);
-        make.width.height.equalTo(@(80));
+        make.width.height.equalTo(@(50));
     }];
     
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -52,34 +61,44 @@
         make.top.equalTo(self.mas_top).offset(10);
         make.bottom.equalTo(self.mas_bottom);
         make.right.equalTo(self.mas_right);
+        make.height.equalTo(@(3*50 + 20));
     }];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
+
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 3;
 }
+
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"" forIndexPath:indexPath];
+    AddressEditHeadSubCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AddressEditHeadSubCell" forIndexPath:indexPath];
     
     return cell;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
-}
+
+
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
     return [UIView new];
 }
+
+
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     return [UIView new];
 }
+
+
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 0.1;
 }
+
+
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 0.1;
 }

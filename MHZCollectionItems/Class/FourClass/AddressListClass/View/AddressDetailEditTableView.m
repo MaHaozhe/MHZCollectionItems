@@ -8,6 +8,7 @@
 
 #import "AddressDetailEditTableView.h"
 #import "AddressEditHeadCell.h"
+#import "AddressEidtPhoneBaseCell.h"
 
 @interface AddressDetailEditTableView()<UITableViewDataSource,UITableViewDelegate>
 
@@ -28,25 +29,40 @@
     self.delegate = self;
     self.dataSource = self;
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.backgroundColor = [UIColor colorWith0xRGB:@"efefef" alpha:1.f];
+    self.backgroundColor = ADDRESSLIST_BACKGROUND_COLOR;
+    self.estimatedRowHeight = 100;
     [self registerClass:[AddressEditHeadCell class] forCellReuseIdentifier:@"AddressEditHeadCell"];
+    [self registerClass:[AddressEidtPhoneBaseCell class] forCellReuseIdentifier:@"AddressEidtPhoneBaseCell"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 2;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell;
+    switch (indexPath.row) {
+        case 0:
+        {
+            cell = [tableView dequeueReusableCellWithIdentifier:@"AddressEditHeadCell" forIndexPath:indexPath];
+        }
+            break;
+        case 1:
+        {
+            cell = [tableView dequeueReusableCellWithIdentifier:@"AddressEidtPhoneBaseCell" forIndexPath:indexPath];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"" forIndexPath:indexPath];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
-}
+
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
     return [UIView new];

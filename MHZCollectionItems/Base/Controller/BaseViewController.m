@@ -100,4 +100,7 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 }
 
+-(void)setNavigationBarBgImageWithColor:(UIColor *)color{
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage createImageWithColor:color] forBarMetrics:UIBarMetricsDefault];
+}
 @end

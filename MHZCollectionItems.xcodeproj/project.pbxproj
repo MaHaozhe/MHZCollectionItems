@@ -40,6 +40,11 @@
 		234D2B15208EFEB500AF8279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B14208EFEB500AF8279 /* main.m */; };
 		234D2B1F208F07A900AF8279 /* AppDelegate+Bugly.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B1E208F07A900AF8279 /* AppDelegate+Bugly.m */; };
 		234D2B23208F350D00AF8279 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D2B21208F350C00AF8279 /* AppDelegate+JPush.m */; };
+		23766F6920CA1C800083E1CA /* AddressListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23766F6820CA1C800083E1CA /* AddressListModel.m */; };
+		23766F6C20CA57D60083E1CA /* AddressEditPhoneAddTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23766F6B20CA57D60083E1CA /* AddressEditPhoneAddTypeCell.m */; };
+		23766F6F20CA58960083E1CA /* AddressEditPhoneTypeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23766F6E20CA58960083E1CA /* AddressEditPhoneTypeTableView.m */; };
+		23766F7220CA5AFE0083E1CA /* AddressEidtPhoneBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23766F7120CA5AFE0083E1CA /* AddressEidtPhoneBaseCell.m */; };
+		23766F7520CA5C310083E1CA /* AddressEditPhoneSubTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23766F7420CA5C310083E1CA /* AddressEditPhoneSubTypeCell.m */; };
 		238B3C2C20A5487000F396D7 /* PaymentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 238B3C2B20A5487000F396D7 /* PaymentVC.m */; };
 		238B3C3220A54A0100F396D7 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 238B3C3020A54A0000F396D7 /* AlipaySDK.bundle */; };
 		238B3C3420A54A3500F396D7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 238B3C3320A54A3500F396D7 /* libc++.tbd */; };
@@ -128,6 +133,16 @@
 		234D2B1E208F07A900AF8279 /* AppDelegate+Bugly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Bugly.m"; sourceTree = "<group>"; };
 		234D2B21208F350C00AF8279 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
 		234D2B22208F350C00AF8279 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
+		23766F6720CA1C800083E1CA /* AddressListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressListModel.h; sourceTree = "<group>"; };
+		23766F6820CA1C800083E1CA /* AddressListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressListModel.m; sourceTree = "<group>"; };
+		23766F6A20CA57D60083E1CA /* AddressEditPhoneAddTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressEditPhoneAddTypeCell.h; sourceTree = "<group>"; };
+		23766F6B20CA57D60083E1CA /* AddressEditPhoneAddTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressEditPhoneAddTypeCell.m; sourceTree = "<group>"; };
+		23766F6D20CA58960083E1CA /* AddressEditPhoneTypeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressEditPhoneTypeTableView.h; sourceTree = "<group>"; };
+		23766F6E20CA58960083E1CA /* AddressEditPhoneTypeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressEditPhoneTypeTableView.m; sourceTree = "<group>"; };
+		23766F7020CA5AFE0083E1CA /* AddressEidtPhoneBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressEidtPhoneBaseCell.h; sourceTree = "<group>"; };
+		23766F7120CA5AFE0083E1CA /* AddressEidtPhoneBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressEidtPhoneBaseCell.m; sourceTree = "<group>"; };
+		23766F7320CA5C310083E1CA /* AddressEditPhoneSubTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressEditPhoneSubTypeCell.h; sourceTree = "<group>"; };
+		23766F7420CA5C310083E1CA /* AddressEditPhoneSubTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressEditPhoneSubTypeCell.m; sourceTree = "<group>"; };
 		238B3C2A20A5487000F396D7 /* PaymentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentVC.h; sourceTree = "<group>"; };
 		238B3C2B20A5487000F396D7 /* PaymentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentVC.m; sourceTree = "<group>"; };
 		238B3C3020A54A0000F396D7 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -202,6 +217,14 @@
 				234B776F20C9208B00FBACB9 /* AddressEditHeadCell.m */,
 				234B777120C927BB00FBACB9 /* AddressEditHeadSubCell.h */,
 				234B777220C927BB00FBACB9 /* AddressEditHeadSubCell.m */,
+				23766F7020CA5AFE0083E1CA /* AddressEidtPhoneBaseCell.h */,
+				23766F7120CA5AFE0083E1CA /* AddressEidtPhoneBaseCell.m */,
+				23766F6D20CA58960083E1CA /* AddressEditPhoneTypeTableView.h */,
+				23766F6E20CA58960083E1CA /* AddressEditPhoneTypeTableView.m */,
+				23766F6A20CA57D60083E1CA /* AddressEditPhoneAddTypeCell.h */,
+				23766F6B20CA57D60083E1CA /* AddressEditPhoneAddTypeCell.m */,
+				23766F7320CA5C310083E1CA /* AddressEditPhoneSubTypeCell.h */,
+				23766F7420CA5C310083E1CA /* AddressEditPhoneSubTypeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +234,8 @@
 			children = (
 				2330CE7020AEA6C500FC2FB8 /* MFMDBObj.h */,
 				2330CE7120AEA6C500FC2FB8 /* MFMDBObj.m */,
+				23766F6720CA1C800083E1CA /* AddressListModel.h */,
+				23766F6820CA1C800083E1CA /* AddressListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -735,7 +760,9 @@
 				232BD47E2091A9C3005E6E09 /* SpringVC.m in Sources */,
 				232BD4942091AE03005E6E09 /* Helper.m in Sources */,
 				234D2B0A208EFEB300AF8279 /* ViewController.m in Sources */,
+				23766F6F20CA58960083E1CA /* AddressEditPhoneTypeTableView.m in Sources */,
 				238B3C2C20A5487000F396D7 /* PaymentVC.m in Sources */,
+				23766F6920CA1C800083E1CA /* AddressListModel.m in Sources */,
 				234B777020C9208B00FBACB9 /* AddressEditHeadCell.m in Sources */,
 				2328D6D920AABAC4007F7CC9 /* AddressListVC.m in Sources */,
 				232BD45D209182FA005E6E09 /* AppDelegate+ThirdPort.m in Sources */,
@@ -744,6 +771,7 @@
 				232BD4872091AA02005E6E09 /* WinterVC.m in Sources */,
 				234B777320C927BB00FBACB9 /* AddressEditHeadSubCell.m in Sources */,
 				232BD4912091ABFB005E6E09 /* BaseNavigationController.m in Sources */,
+				23766F7520CA5C310083E1CA /* AddressEditPhoneSubTypeCell.m in Sources */,
 				234D2B15208EFEB500AF8279 /* main.m in Sources */,
 				234007D12094698000E7F23D /* TransferAnimatManager.m in Sources */,
 				23F417B320A930EE00A75E26 /* APOrderInfo.m in Sources */,
@@ -752,9 +780,11 @@
 				234B776A20C8D48300FBACB9 /* AddressDetailEditVC.m in Sources */,
 				2328D6E520AABF22007F7CC9 /* AddressSearchBar.m in Sources */,
 				234D2B07208EFEB300AF8279 /* AppDelegate.m in Sources */,
+				23766F7220CA5AFE0083E1CA /* AddressEidtPhoneBaseCell.m in Sources */,
 				232BD47B2091A8F0005E6E09 /* BaseModel.m in Sources */,
 				232BD48B2091AA6E005E6E09 /* BaseTabbarVC.m in Sources */,
 				234D2B23208F350D00AF8279 /* AppDelegate+JPush.m in Sources */,
+				23766F6C20CA57D60083E1CA /* AddressEditPhoneAddTypeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

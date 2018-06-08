@@ -7,28 +7,35 @@
 //
 
 #import "AddressDetailEditVC.h"
+#import "AddressDetailEditTableView.h"
 
 @interface AddressDetailEditVC ()
+
+@property (nonatomic, strong) AddressDetailEditTableView *tableView;
 
 @end
 
 @implementation AddressDetailEditVC
 
+#pragma mark
+#pragma mark - 1.View生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationItem.title = @"新建联系人";
     
-    self.view.backgroundColor = [UIColor colorWith0xRGB:@"efefef" alpha:1.f];
+    self.view.backgroundColor = ADDRESSLIST_BACKGROUND_COLOR;
     
     [self setupNavigationBar];
+    
+    [self setupSubviews];
 }
 
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [super hideNavigationBarBottomLine];
-    [super hideNavigationBarBgColor];
+    [super setNavigationBarBgImageWithColor:ADDRESSLIST_BACKGROUND_COLOR];
 }
 
 
@@ -46,4 +53,28 @@
 }
 
 
+-(void)setupSubviews{
+    _tableView = [[AddressDetailEditTableView alloc] init];
+    [self.view addSubview:_tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.bottom.equalTo(self.view);
+    }];
+}
+
+#pragma mark
+#pragma mark - 2.View代理、数据源方法
+
+
+#pragma mark 自定义代理
+
+
+#pragma mark
+#pragma mark - 3.用户交互
+
+
+#pragma mark
+#pragma mark - 4.数据处理/Http
+
+#pragma mark
+#pragma mark - 5.其它
 @end

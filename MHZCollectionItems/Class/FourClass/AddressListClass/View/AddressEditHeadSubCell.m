@@ -25,17 +25,21 @@
 
 -(void)setupSubviews{
     
+    self.backgroundColor = [UIColor clearColor];
+    
     _titleTF = [[UITextField alloc] init];
     _titleTF.textColor = [UIColor blackColor];
-    _titleTF.font = [UIFont systemFontOfSize:14];
+    _titleTF.font = [UIFont systemFontOfSize:20];
     [self.contentView addSubview:_titleTF];
     
     UIImageView *lineImgV = [[UIImageView alloc] init];
-    lineImgV.backgroundColor = DEFAULT_LINE_COLOR;
+    lineImgV.backgroundColor = ADDRESSLIST_LINE_COLOR;
     [self.contentView addSubview:lineImgV];
     
     [_titleTF mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.right.bottom.equalTo(self.contentView);
+        make.left.equalTo(self.contentView.mas_left).offset(15);
+        make.top.right.bottom.equalTo(self.contentView);
+        make.height.equalTo(@(50));
     }];
     
     [lineImgV mas_makeConstraints:^(MASConstraintMaker *make) {
