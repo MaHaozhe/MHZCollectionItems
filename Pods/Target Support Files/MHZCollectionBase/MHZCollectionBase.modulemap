@@ -1,0 +1,6 @@
+framework module MHZCollectionBase {
+  umbrella header "MHZCollectionBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

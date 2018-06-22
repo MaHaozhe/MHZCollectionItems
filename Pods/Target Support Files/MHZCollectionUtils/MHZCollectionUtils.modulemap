@@ -1,0 +1,6 @@
+framework module MHZCollectionUtils {
+  umbrella header "MHZCollectionUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

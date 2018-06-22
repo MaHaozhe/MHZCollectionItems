@@ -1,0 +1,6 @@
+framework module Pods_MHZCollectionItems {
+  umbrella header "Pods-MHZCollectionItems-umbrella.h"
+
+  export *
+  module * { export * }
+}
