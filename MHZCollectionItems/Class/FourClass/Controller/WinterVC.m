@@ -8,7 +8,7 @@
 
 #import "WinterVC.h"
 #import "PaymentVC.h"
-#import "AddressListVC.h"//通讯录
+#import <MHZCollectionAddressList/AddressListVC.h>
 
 @interface WinterVC ()<UITableViewDelegate,UITableViewDataSource>
 
