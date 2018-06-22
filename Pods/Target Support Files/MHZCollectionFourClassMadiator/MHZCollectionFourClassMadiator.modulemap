@@ -1,0 +1,6 @@
+framework module MHZCollectionFourClassMadiator {
+  umbrella header "MHZCollectionFourClassMadiator-umbrella.h"
+
+  export *
+  module * { export * }
+}
