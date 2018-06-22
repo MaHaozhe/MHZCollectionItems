@@ -10,11 +10,14 @@ PODS:
     - JCore (~> 1.1.1)
   - Masonry (1.1.0)
   - MHZCollectionAddressList (0.0.1):
+    - CTMediator
     - FMDB
     - Masonry
     - MHZCollectionBase (~> 0.0.1)
   - MHZCollectionBase (0.0.2):
     - MHZCollectionUtils (~> 0.0.1)
+  - MHZCollectionFourClassMadiator (0.0.1):
+    - CTMediator
   - MHZCollectionUtils (0.0.1)
   - UMCAnalytics (5.5.0):
     - UMCCommon
@@ -28,12 +31,15 @@ DEPENDENCIES:
   - JPush (= 3.0.2)
   - Masonry
   - MHZCollectionAddressList (from `~/Desktop/BasisSets/MHZCollectionAddressList`)
+  - MHZCollectionBase
+  - MHZCollectionFourClassMadiator
   - UMCAnalytics
   - UMCCommon
 
 SPEC REPOS:
   https://gitee.com/wlsxmahaozhe/MHZPodSpec.git:
     - MHZCollectionBase
+    - MHZCollectionFourClassMadiator
     - MHZCollectionUtils
   https://github.com/CocoaPods/Specs.git:
     - AvoidCrash
@@ -58,12 +64,13 @@ SPEC CHECKSUMS:
   JCore: 27598485098d0db99d2812cba048003457d08cfb
   JPush: 01a693fafe51b93eafc2e368bbc7a7cc07e12ce4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MHZCollectionAddressList: 67024aa4186552e222829b688441257a4fb5c865
+  MHZCollectionAddressList: e65f3fd4d995e4e955e5e3d85d36904540ca132e
   MHZCollectionBase: 1491435a09ece4ce26a4e9a246c7673be6fa252f
+  MHZCollectionFourClassMadiator: a96a42e31c46de3bb6a0f799fba960c3367cb9c2
   MHZCollectionUtils: 45fb3971eba1c75a1d7011976fd6582ff6beb201
   UMCAnalytics: 4667788559a72f2fa5077117d1b8802a3b6eb6bb
   UMCCommon: 82d21f4bb9532a5472cc533bbd8ed48aff376a14
 
-PODFILE CHECKSUM: 67128c2f3d3b4d40e00c61ebd592fe59243b53dc
+PODFILE CHECKSUM: a8bf6bb59468ef046729ef0875f67bc482e03e70
 
 COCOAPODS: 1.5.0

@@ -8,7 +8,7 @@
 
 #import "WinterVC.h"
 #import "PaymentVC.h"
-#import <MHZCollectionAddressList/AddressListVC.h>
+#import <MHZCollectionFourClassMadiator/CTMediator+MHZCollectionFourClassMadiator.h>
 
 @interface WinterVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -84,8 +84,10 @@
         PaymentVC *payVC = [[PaymentVC alloc] init];
         [self.navigationController pushViewController:payVC animated:YES];
     }else if (indexPath.row == 1){
-        AddressListVC *addressVC = [[AddressListVC alloc] init];
-        [self.navigationController pushViewController:addressVC animated:YES];
+        UIViewController *addressVC = [[CTMediator sharedInstance] Mediator_GetAddressListVC];
+        if ([addressVC isKindOfClass:[UIViewController class]]) {
+            [self.navigationController pushViewController:addressVC animated:YES];
+        }
     }
 }
 

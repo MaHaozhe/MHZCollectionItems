@@ -148,6 +148,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionAddressList/MHZCollectionAddressList.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionBase/MHZCollectionBase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionFourClassMadiator/MHZCollectionFourClassMadiator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionUtils/MHZCollectionUtils.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
 fi
@@ -157,6 +158,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionAddressList/MHZCollectionAddressList.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionBase/MHZCollectionBase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionFourClassMadiator/MHZCollectionFourClassMadiator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MHZCollectionUtils/MHZCollectionUtils.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
 fi

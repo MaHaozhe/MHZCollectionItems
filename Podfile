@@ -20,6 +20,8 @@ pod 'UMCAnalytics'
 pod 'Masonry'
 pod 'FMDB'
 pod 'CTMediator'
+pod 'MHZCollectionBase'
 #pod 'MHZCollectionAddressList'
+pod 'MHZCollectionFourClassMadiator'
 end
 

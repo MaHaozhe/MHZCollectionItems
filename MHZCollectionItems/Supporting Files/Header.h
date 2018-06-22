@@ -12,5 +12,6 @@
 #import <Masonry/Masonry.h>
 #import "Helper.h"
 #import "Defines.h"
-#import "BaseNavigationController.h"
+#import <MHZCollectionBase/BaseNavigationController.h>
+#import <MHZCollectionBase/BaseViewController.h>
 #endif /* Header_h */
